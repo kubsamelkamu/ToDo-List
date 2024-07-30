@@ -1,4 +1,4 @@
-const { useState } = require("react");
+import { useState } from "react";
 
 function TaskManager({setTasks}){
     const[input,setInput] = useState('');
@@ -13,7 +13,7 @@ function TaskManager({setTasks}){
     }
 
     return(
-        <form onSubmit={}>
+        <form onSubmit={handleSubmit}>
             <input type="text" id="tasks" value={input} 
             placeholder="Enter tasks ..." onChange={(e)=>e.target.value}/>
             <button type="submit">ADD</button>
