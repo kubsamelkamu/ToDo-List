@@ -26,3 +26,5 @@ function TaskManager({setTasks}){
 TaskManager.propTypes ={
     setTasks: PropTypes.func.isRequired,
 }
+
+export default TaskManager;
