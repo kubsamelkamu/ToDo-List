@@ -1,4 +1,6 @@
 import { useState } from "react";
+import PropTypes from 'prop-types';
+
 
 function TaskManager({setTasks}){
     const[input,setInput] = useState('');
