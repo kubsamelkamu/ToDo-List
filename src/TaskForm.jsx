@@ -3,6 +3,15 @@ const { useState } = require("react");
 function TaskManager({setTasks}){
     const[input,setInput] = useState('');
 
+    const handleSubmit =(e)=>{
+        e.preventDefault();
+        if (input.trim === '') {
+            return;
+        }
+        setTasks(prevTasks => [...prevTasks,{text:input,completed:false}]);
+        setInput('')
+    }
+
     return(
         <form onSubmit={}>
             <input type="text" id="tasks" value={input} 
