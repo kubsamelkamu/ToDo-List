@@ -1,6 +1,6 @@
 const { useState } = require("react");
 
-function TaskManager(){
+function TaskManager({setTasks}){
     const[input,setInput] = useState('');
 
     return(
