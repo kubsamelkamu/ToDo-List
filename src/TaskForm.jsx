@@ -22,3 +22,7 @@ function TaskManager({setTasks}){
         </form>
     )
 }
+
+TaskManager.propTypes ={
+    setTasks: PropTypes.func.isRequired,
+}
