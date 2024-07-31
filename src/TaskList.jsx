@@ -8,7 +8,7 @@ function TaskListComponent(tasks,setTasks) {
         setTasks(newTasks);
     }
 
-    const handleDelete=()=>{
+    const handleDelete=(index)=>{
         setTasks(tasks.filter((_, i) => i !== index));
     }
 
