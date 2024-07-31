@@ -38,3 +38,5 @@ TaskListComponent.propTypes = {
   ).isRequired,
   setTasks: PropTypes.func.isRequired,
 };
+
+export default TaskListComponent;
