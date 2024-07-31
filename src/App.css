@@ -33,7 +33,15 @@ button:hover {
   background-color: #0056b3;
 }
 
-task-list ul{
+.task-list ul{
   list-style: none;
   padding: 0px;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
