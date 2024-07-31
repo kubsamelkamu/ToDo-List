@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function TaskListComponent(tasks,setTasks) {
 
     const handleToggleCompletes =(index)=>{
@@ -24,5 +26,15 @@ function TaskListComponent(tasks,setTasks) {
             </ul>
         
         </div>
-    )
+    );
 }
+
+TaskListComponent.propTypes = {
+  tasks: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      completed: PropTypes.bool.isRequired,
+    })
+  ).isRequired,
+  setTasks: PropTypes.func.isRequired,
+};
